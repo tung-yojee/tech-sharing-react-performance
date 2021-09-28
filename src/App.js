@@ -1,25 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+import ReactMemoExample from "./react.memo/ReactMemoExample";
+import UseCallbackUnOptimized from "./useCallback/UnOptimized";
+import UseCallbackOptimized from "./useCallback/Optimized";
+import UseMemoUnOptimizedProp from "./useMemo/UnOptimizedProp";
+import UseMemoOptimizedProp from "./useMemo/OptimizedProp";
+import UnOptimizedExpensiveCalculation from "./useMemo/UnOptimizedExpensiveCalculation";
+import OptimizedExpensiveCalculation from "./useMemo/OptimizedExpensiveCalculation";
+import DebounceUnOptimized from "./debounce/UnOptimized";
+import DebounceOptimized from "./debounce/Optimized";
+import VirtualizationUnOptimized from "./virtualization/UnOptimized";
+import VirtualizationOptimized from "./virtualization/Optimized";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <ReactMemoExample/>
+
+  // return <UseCallbackUnOptimized/>
+  // return <UseCallbackOptimized/>
+
+  // return <UseMemoUnOptimizedProp />
+  // return <UseMemoOptimizedProp />
+
+  // return <UnOptimizedExpensiveCalculation/>
+  // return <OptimizedExpensiveCalculation/>
+
+  // return <DebounceUnOptimized />
+  // return <DebounceOptimized />
+
+  // return <VirtualizationUnOptimized />
+  // return <VirtualizationOptimized />
 }
 
 export default App;
