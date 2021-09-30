@@ -11,7 +11,7 @@ const Optimized = () => {
 
   return (
     <div>
-      <h1>Optimized</h1>
+      <h1>UseCallbackExample</h1>
       <LargeChildComponent onClick={onClick}/>
 
       <button className='btn' onClick={forceReRender}>Force re render</button>

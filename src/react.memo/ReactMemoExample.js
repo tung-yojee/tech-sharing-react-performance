@@ -7,7 +7,7 @@ const ReactMemoExample = () => {
 
   return (
     <>
-      <h1>UseCallbackExample</h1>
+      <h1>ReactMemoExample</h1>
 
       <LargeChildComponent/>
 

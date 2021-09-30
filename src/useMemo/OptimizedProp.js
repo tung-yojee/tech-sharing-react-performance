@@ -2,14 +2,14 @@ import React, {useMemo} from 'react';
 import useForceReRender from "../helpers/useForceReRender";
 import LargeChildComponent from "./LargeChildComponent";
 
-const UnOptimizedProp = () => {
+const OptimizedProp = () => {
   const forceReRender = useForceReRender()
 
   const items = useMemo(() => [1, 2, 3, 4, 5], [])
 
   return (
     <div>
-      <h1>UnOptimizedProp</h1>
+      <h1>OptimizedProp</h1>
 
       <LargeChildComponent items={items}/>
 
@@ -18,4 +18,4 @@ const UnOptimizedProp = () => {
   );
 };
 
-export default UnOptimizedProp;
+export default OptimizedProp;
